@@ -31,17 +31,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 32px;
     
 }
 
 .nav__container {
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    
 }
 
 ul {
@@ -62,6 +63,7 @@ li {
     position: relative;
     transition: all 300ms;
     text-decoration: none;
+    margin: 0 10px;
 }
 
 .nav__link:hover {
@@ -69,10 +71,14 @@ li {
 }
 
 .nav__links {
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo--wrapper {
+    display: flex;
+    align-items: center;
+
 }
 
 .nav__logo {
