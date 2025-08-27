@@ -27,7 +27,7 @@ NAV BAR
 
 */
 
-.nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,15 +44,28 @@ NAV BAR
     margin: 0 auto;
 }
 
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
 
 .nav__link, .nav__link--login {
     color: #1a202c;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 1.5;
-    margin: 8px 0;
-    padding-bottom: 4px;
+    padding-top: 4px;
+    letter-spacing: 0.35px;
     border-bottom: 2px solid transparent;
+    position: relative;
+    transition: all 300ms;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
 }
 
 .nav__links {
@@ -63,12 +76,19 @@ NAV BAR
 }
 
 .nav__logo {
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     margin: 8px 0;
     padding-bottom: 4px;
 }
 
-li {
-    list-style-type: none;
+.nav__logo--title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
 }
+
