@@ -66,9 +66,32 @@ li {
     margin: 0 24px;
 }
 
+
 .nav__link:hover {
-    text-decoration: underline;
     cursor: pointer;
+}
+
+.nav__link a {
+    position: relative;       
+    text-decoration: none;
+    color: #1a202c;
+    font-weight: 600;
+}
+
+.nav__link a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;            
+    width: 100%;
+    height: 2px;
+    background-color: #6415ff;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+.nav__link a:hover::after {
+    opacity: 1;
 }
 
 .nav__links {
