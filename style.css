@@ -423,6 +423,7 @@ img {
 }
 
 /* STEPS */
+
 #steps {
   padding: 96px 0;
 }
@@ -433,7 +434,7 @@ img {
   gap: 64px;
 }
 
-/* Left image */
+
 .steps__img--wrapper {
   flex: 1;
   display: flex;
@@ -441,7 +442,7 @@ img {
   align-items: center;
 }
 
-/* Right text */
+
 .steps__description {
   flex: 1;
 }
@@ -503,3 +504,20 @@ img {
   color: #7c8ba1;
   line-height: 1.6;
 }
+
+/* VALUES */
+
+#values .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values__description, .values__img {
+    width: 50%
+}
+
+.values__description {
+    padding: 32px 64px 32px 0;
+}
+
