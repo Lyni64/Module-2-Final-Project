@@ -455,14 +455,13 @@ svg:not(:root) {
 
 
 .steps__img--wrapper {
-  flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
 .steps__img {
-  z-index: 1;
+  z-index: 2;
+  
 }
 
 .steps__grid {
@@ -473,7 +472,7 @@ svg:not(:root) {
     width: 10rem;
     height: 10rem;
     opacity: 0.8;
-    z-index: 2;
+    z-index: 1;
     color: rgb(100, 21, 255);
     fill: currentColor;
 }
