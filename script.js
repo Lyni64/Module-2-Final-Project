@@ -1,7 +1,6 @@
-function openMenu() {
-    document.body.classList.add("menu--open");
-}
+const toggle = document.querySelector(".nav__toggle");
+const navLinks = document.querySelector(".nav__links");
 
-function closeMenu() {
-    document.body.classList.remove("menu--open");
-}
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("nav__links--active");
+});

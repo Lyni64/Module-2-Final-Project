@@ -9,35 +9,43 @@
       src="https://kit.fontawesome.com/8d3ea1a778.js"
       crossorigin="anonymous">
     </script>
+    
   </head>
   <body>
     <section id="landing">
       <nav>
-        <div class="row nav__container">
-          <div class="nav__logo--wrapper">
-            <img
-              class="nav__logo"
-              src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-              alt=""
-            />
-            <div class="nav__logo--title">Teract</div>
-          </div>
-          <ul class="nav__links">
-            <li class="nav__link"><a href="#">About</a></li>
-            <li class="nav__link"><a href="#">Blog</a></li>
-            <li class="nav__link"><a href="#">Pricing</a></li>
-            <li class="nav__link"><a href="#">Contact Us</a></li>
-            <li class="nav__link login"><a href="#">Login</a></li>
-            <button class="signup-btn"><a href="#"></a>Sign Up</button>
-          </ul>
-        </div>
-      </nav>
+  <div class="row nav__container">
+    <div class="nav__logo--wrapper">
+      <img
+        class="nav__logo"
+        src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+        alt="Logo"
+      />
+      <div class="nav__logo--title">Teract</div>
+    </div>
+
+  
+    <button class="nav__toggle" aria-label="Toggle Menu">
+      ☰
+    </button>
+
+    <ul class="nav__links">
+      <li class="nav__link"><a href="#">About</a></li>
+      <li class="nav__link"><a href="#">Blog</a></li>
+      <li class="nav__link"><a href="#">Pricing</a></li>
+      <li class="nav__link"><a href="#">Contact Us</a></li>
+      <li class="nav__link login"><a href="#">Login</a></li>
+      <button class="signup-btn"><a href="#">Sign Up</a></button>
+    </ul>
+  </div>
+</nav>
+
       <header>
         <div class="container">
           <div class="row">
             <div class="header__description">
               <h1>
-                Beautful React Templates <span class="purple">for you</span>
+                Beautiful React Templates <span class="purple">for you</span>
               </h1>
               <p class="header__description--para">
                 Our templates are easy to setup, understand and customize. Fully
@@ -606,6 +614,16 @@
     </div>
   </div>
     </main>
+    <script>
+  const toggle = document.querySelector(".nav__toggle");
+  const navLinks = document.querySelector(".nav__links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("nav__links--active");
+  });
+</script>
+</body>
+
   </body>
   <footer>
     <svg viewBox="0 0 600 600" class="footer__blob--1">
