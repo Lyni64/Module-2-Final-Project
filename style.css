@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  color: #243e63;
+  color: #0f172a;
 }
 
 body {
@@ -249,7 +249,7 @@ p {
 
 .header__customers {
   margin-top: 16px;
-  padding-right: 128px;
+  padding-right: 1px;
   opacity: 0.5;
 }
 
@@ -491,9 +491,6 @@ svg:not(:root) {
 svg:not(:root) {
   overflow-clip-margin: content-box;
   overflow: hidden;
-}
-.steps__description {
-  flex: 1;
 }
 
 .steps__tag {
